@@ -1,0 +1,302 @@
+:root{
+    --main-color:#0563fa;
+    --black:#080808;
+    --box-shadow:0 5px 10px rgba(255, 255, 255, 0.911);
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-padding-top: 60px;
+}
+
+section{
+    padding:20px 0;
+}
+
+section:nth-child(odd){
+    background: #f8f8fe;
+}
+
+.heading{
+    text-align: center;
+    padding:0 15px;
+    padding-bottom: 5px;
+    color:var(--black);
+    font-size: 30px;
+}
+
+.heading span{
+    color:var(--main-color);
+}
+
+.link-btn{
+    display: inline-block;
+    background:var(--main-color);
+    color:rgb(3, 3, 3);
+    border-radius: 50px;
+    padding:5px 25px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.link-btn:hover{
+    color:#fff;
+    background:var(--black);
+}
+
+header{
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+header .logo{
+    font-size: 20px;
+    color:var(--black);
+}
+
+header .logo span{
+    color:var(--main-color);
+}
+
+header .nav a{
+    margin-left: 3px;
+    border-radius: 50px;
+    color: rgb(5, 5, 5);
+    padding:5px 15px;
+}
+
+header .nav a.active,
+header .nav a:hover{
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color:#fff;
+}
+
+#menu-bar{
+    color:var(--black);
+    cursor: pointer;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+
+.logowithname {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    
+}
+
+.logowithname #text1{
+    font-size: 25px;
+    padding-top: .1cm;
+}
+
+/* Home Section */
+
+body{
+    
+    /* background: url("<?php echo $CDNURL; ?>HomePage.png") no-repeat; */
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#bionic{
+    display: flex;
+    padding-top: 18%;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    
+}
+
+
+
+.button{
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 5vh;
+    padding-left: 2rem;
+    padding-top: .3rem;
+    background-color: red;
+    color: white;
+    }
+
+.button4{
+    border-radius: 50px;
+    position: relative;
+    left: 630px;
+}
+
+@media (max-width:2560px){
+    #bionic{
+        display: flex;
+        padding-top: 18%;
+        padding-left: 5%;
+        justify-content: center;
+        font-size: 4rem;
+        font-family: 'Josefin Sans', sans-serif;
+        }
+    
+    .button{
+        display: flex;
+        position: relative;
+        width: 270px;
+        height: 5vh;
+        padding-left: 1.7rem;
+        padding-top: .6rem;
+        background-color: red;
+        color: white;
+        font-size: 1.1rem;
+        }
+    
+    .button4{
+        border-radius: 50px;
+        position: relative;
+        left: 870px;
+    }
+}
+
+@media (max-width:1440px){
+    #bionic{
+        display: flex;
+        padding-top: 13%;
+        padding-left: 6%;
+        justify-content: center;
+        font-size: 3rem;
+        font-family: 'Josefin Sans', sans-serif;
+        }
+    
+    .button{
+        display: flex;
+        position: relative;
+        width: 250px;
+        height: 7vh;
+        padding-left: 1.2rem;
+        padding-top: .3rem;
+        background-color: red;
+        color: white;
+        font-size: 1.1rem;
+        }
+    
+    .button4{
+        border-radius: 50px;
+        position: relative;
+        left: 650px;
+    }
+}
+
+@media (max-width:360px){
+    #bionic{
+        display: flex;
+        padding-top: 70%;
+        padding-left: 1%;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+        }
+    
+    .button{
+        display: flex;
+        position: relative;
+        width: 240px;
+        height: 5vh;
+        padding-left: 1rem;
+        padding-top: .3rem;
+        background-color: red;
+        color: white;
+        font-size: 1.1rem;
+        }
+    
+    .button4{
+        border-radius: 50px;
+        position: relative;
+        left: 60px;
+    }
+
+    .logowithname #text1{
+        font-size: 16px;
+        padding-top: .2cm;
+    }
+
+    .logowithname #logo1{
+        height: 35px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    .home .content h3{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .nav{
+        position: absolute;
+        top:100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .nav a{
+        display: block;
+        width: 100%;
+        margin:10px;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+}

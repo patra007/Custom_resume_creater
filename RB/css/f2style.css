@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: snow;
+  }
+  .container{
+    max-width: 850px;
+    width: 100%;
+    background-image: url("/img/pbg1.jpg");
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 12px 0;
+    flex-direction: row;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color:  #337ab7;
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
+form .button{
+    height: 45px;
+    margin: 35px 0
+  }
+  form .button input{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #337ab7;
+  }
+ 
+  form .button a{
+  text-decoration: none;
+  padding: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #337ab7;
+  }
+  form .button input:hover{
+transform: scale(0.99); 
+   background: #2a9b50;
+   }
+   .skil{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.lang{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}

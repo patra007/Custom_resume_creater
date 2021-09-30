@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> personal info</title>
+    <link rel="stylesheet" href="../css/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Personal Info</div>
+    <div class="content">
+       <form action="f2.php" method="post"> 
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="txtname"  placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Profession</span>
+            <input type="text" name="txtpname" placeholder="Enter the Profession name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="txtemail" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="txtnum" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">linkden</span>
+            <input type="text" name="txtlnkdn" placeholder="Enter your linkden id" >
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="txtadd" placeholder="city,State,India" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Next">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
